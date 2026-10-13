@@ -1,0 +1,17 @@
+{
+  "routes": [
+    {
+      "src": "/app\\.js",
+      "has": [{ "type": "header", "key": "sec-fetch-dest", "value": "document" }],
+      "dest": "/404.html",
+      "status": 404
+    },
+    {
+      "src": "/styles\\.css",
+      "has": [{ "type": "header", "key": "sec-fetch-dest", "value": "document" }],
+      "dest": "/404.html",
+      "status": 404
+    },
+    { "handle": "filesystem" }
+  ]
+}
